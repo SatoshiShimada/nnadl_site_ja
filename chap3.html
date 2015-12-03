@@ -488,7 +488,7 @@ in <span id="margin_607315497502_reveal" class="equation_link">(57)</span><span 
 logarithms are of numbers in the range $0$ to $1$, and thus are
 negative; and (b) there is a minus sign out the front.</p>-->
 <p>
-二つの性質によりクロスエントロピーはコスト関数であると解釈できます。一つにはそれは非負、つうまり$C>0$であることです。このことを知るには、式<span id="margin_607315497502_reveal" class="equation_link">(57)</span><span id="margin_607315497502" class="marginequation" style="display: none;"><a href="chap3.html#eqtn57" style="padding-bottom: 5px;" onMouseOver="this.style.borderBottom='1px solid #2A6EA6';" onMouseOut="this.style.borderBottom='0px';">\begin{eqnarray}
+二つの性質によりクロスエントロピーはコスト関数であると解釈できます。一つにはそれは非負、つまり$C>0$であることです。このことを知るには、式<span id="margin_607315497502_reveal" class="equation_link">(57)</span><span id="margin_607315497502" class="marginequation" style="display: none;"><a href="chap3.html#eqtn57" style="padding-bottom: 5px;" onMouseOver="this.style.borderBottom='1px solid #2A6EA6';" onMouseOut="this.style.borderBottom='0px';">\begin{eqnarray}
   C = -\frac{1}{n} \sum_x \left[y \ln a + (1-y ) \ln (1-a) \right] \nonumber\end{eqnarray}</a></span><script>$('#margin_607315497502_reveal').click(function() {$('#margin_607315497502').toggle('slow', function() {});});</script>のすべての項が正であることを確認すればいいです。これは、(a)両方のlogの引数が0から1の範囲なのでその値は負になり、(b)前にマイナス符号が付いているからです。
 </p>
 <!--<p>Second, if the neuron's actual output is close to the desired output,
@@ -509,7 +509,7 @@ similar analysis holds when $y(x) = 1$ and $a \approx 1$.  And so the
 contribution to the cost will be low provided the actual output is
 close to the desired output.</p>-->
 <p>二つ目には、すべての学習の入力$x$についてニューロンの出力が望まれる出力、つまり$y=y(x)$に近いのなら、クロスエントロピーはゼロに近づく<span class="marginnote">
-*このことそ証明するには、望まれる出力$y(x)$が$0$か$1$であることを仮定しなければなりません。これは、例えば分類問題や真偽値関数を計算しているときについては通常成り立ちます。この仮定をおかない時になにが起こるかを理解するには、この節の最後の演習を参照してください。</span>ということです。このことを見るために、例えば同じ入力$x$に対し$y(x)=0$かつ$a \approx 0$と仮定しましょう。これはニューロンがその入力に対して良い仕事をした場合です。$y(x) = 0$なので、式<span id="margin_161232079323_reveal" class="equation_link">(57)</span><span id="margin_161232079323" class="marginequation" style="display: none;"><a href="chap3.html#eqtn57" style="padding-bottom: 5px;" onMouseOver="this.style.borderBottom='1px solid #2A6EA6';" onMouseOut="this.style.borderBottom='0px';">\begin{eqnarray}
+*このことを証明するには、望まれる出力$y(x)$が$0$か$1$であることを仮定しなければなりません。これは、例えば分類問題や真偽値関数を計算しているときについては通常成り立ちます。この仮定をおかない時になにが起こるかを理解するには、この節の最後の演習を参照してください。</span>ということです。このことを見るために、例えば同じ入力$x$に対し$y(x)=0$かつ$a \approx 0$と仮定しましょう。これはニューロンがその入力に対して良い仕事をした場合です。$y(x) = 0$なので、式<span id="margin_161232079323_reveal" class="equation_link">(57)</span><span id="margin_161232079323" class="marginequation" style="display: none;"><a href="chap3.html#eqtn57" style="padding-bottom: 5px;" onMouseOver="this.style.borderBottom='1px solid #2A6EA6';" onMouseOut="this.style.borderBottom='0px';">\begin{eqnarray}
   C = -\frac{1}{n} \sum_x \left[y \ln a + (1-y ) \ln (1-a) \right] \nonumber\end{eqnarray}</a></span><script>$('#margin_161232079323_reveal').click(function() {$('#margin_161232079323').toggle('slow', function() {});});</script>の最初の項が消え、2項目は$-\ln (1-a) \approx 0$となります。$y(x) = 1$かつ$a \approx 1$の場合も同様な解析ができます。このことにより、実際の出力が望まれる出力に近いとき、コストへの寄与は小さいことがわかります。
 </p>
 <!--<p>Summing up, the cross-entropy is positive, and tends toward zero as
